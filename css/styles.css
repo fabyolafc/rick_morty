@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.main-title {
+    color: #5acb4e;
+}
+
+#circle-status {
+    font-size: 10px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.copy {
+    margin-top: 128px;
+}
+
+footer {
+    background-color: #0f5718;
+    color: #4c9c4a;
+}
+
+.main-content {
+    background-image: url(../assets/images/FUNDO.jpg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 300px;
+    padding-top: 40px;
+}
+
+.detail {
+    background-size: cover;
+    padding-bottom: 600px;
+}
+
+
+@media (max-width: 777px) {
+    .detail {
+        background-size: contain;
+        padding-bottom: 300px;
+    }
+}
+
+
+
+/* Sobrescrita Bootstrap */
+.form-control {
+    border-right: none;
+    background-color: transparent;
+    color: #5acb4e;
+}
+
+.form-control:focus {
+    border-color: #cccc;
+    border-right: none;
+    box-shadow: 0 0 0 .25rem rgba(13, 109, 253, 0);
+    background-color: transparent;
+    color: #5acb4e;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #5acb4e;
+    font-weight: 600;
+}
+
+.input-group-text {
+    background-color: transparent;
+    color: #62ab60;
+    border-left: none;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 2px;
+}
+
+.card {
+    background-color: #354338;
+    color: #ffff;
+    cursor: pointer;
+}
+
+
