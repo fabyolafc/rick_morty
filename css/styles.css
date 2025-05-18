@@ -41,6 +41,10 @@ footer {
     padding-bottom: 600px;
 }
 
+.footer_dev {
+    text-decoration: none;
+    color: #4c9c4a;
+}
 
 @media (max-width: 777px) {
     .detail {
