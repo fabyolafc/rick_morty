@@ -89,4 +89,18 @@ footer {
     cursor: pointer;
 }
 
+.page-link {
+    color: #ffff;
+    background-color: #62ab60;
+}
+
+.page-link:hover {
+    color: #0f5718;
+}
+
+.page-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 
