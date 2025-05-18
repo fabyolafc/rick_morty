@@ -5,6 +5,20 @@ async function main() {
   renderFooterData();
 }
 
+let allCharacters = [];
+
+const searchInput = document.getElementById("input-search");
+
+searchInput.addEventListener("keyup", (e) => {
+  const searchTerm = e.target.value.toLowerCase();
+
+  const filteredCharacters = allCharacters.filter(character =>
+    character.name.toLowerCase().includes(searchTerm)
+  );
+
+  renderCharactersList(filteredCharacters);
+});
+
 async function loadMainContent(page) {
   const result = await listCharactersByPage(page);
 
@@ -20,6 +34,8 @@ async function loadMainContent(page) {
       name: episodeName,
     };
   }
+
+  allCharacters = characters;
 
   renderCharactersList(characters);
   renderPagination(result.prevPage, result.nextPage);
